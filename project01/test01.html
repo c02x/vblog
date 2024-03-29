@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .zxx {
+            height: 450px;
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin: 100px auto;
+        }
+
+        .title {
+            height: 40px;
+        }
+
+        .title ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title button {
+            padding: 5px 31.97px;
+            line-height: 40px;
+            border: 0;
+            background-color: #fff;
+        }
+
+        .word {
+            padding: 10px 20px;
+        }
+
+        .pic {
+            margin: 10px 30px;
+            width: 350px;
+            height: 200px;
+        }
+
+        .pic img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zxx">
+        <div class="title">
+            <ul>
+                <li><button onclick="change1()">选项1</button></li>
+                <li><button onclick="change2()">选项2</button></li>
+                <li><button onclick="change3()">选项3</button></li>
+                <li><button onclick="change4()">选项4</button></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="word">
+                <p>
+                    看，静美的雨花石吐露着千年的玲珑心事，听，十月的秋雨任性地飞扬着小小的纯真梦想，吻着恬淡的花香，
+                    仿佛是朵朵花儿的守望，还有你嘴角上上扬的一抹芬芳，叠成一朵淡淡兰花的忧伤。
+                </p>
+            </div>
+            <div class="pic">
+                <img src="IMG_20230814_113936.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        function change1() {
+            var x = document.getElementsByTagName("p")[0];
+            x.innerHTML = "看，静美的雨花石吐露着千年的玲珑心事，听，十月的秋雨任性地飞扬着小小的纯真梦想，吻着恬淡的花香，\
+                    仿佛是朵朵花儿的守望，还有你嘴角上上扬的一抹芬芳，叠成一朵淡淡兰花的忧伤。";
+            var y = document.getElementsByTagName("img")[0];
+            y.src = "IMG_20230814_113936.jpg"
+            var z = document.getElementsByTagName("button")[0];
+            z.style.color = 'red';
+        }
+        function change2() {
+            var x = document.getElementsByTagName("p")[0];
+            x.innerHTML = "人生是一本怎样的书呢？有的人平平淡淡，和风细雨，但他的人生之路却丰富细腻；有的人坎坎坷坷，\
+            千磨万难，但他的人生之书却引人入胜；有的人飞黄腾达，青云有路，但他的人生之书却不堪卒度。";
+            var y = document.getElementsByTagName("img")[0];
+            y.src = "IMG_20230814_175305.jpg"
+        }
+        function change3() {
+            var x = document.getElementsByTagName("p")[0];
+            x.innerHTML = "相信爱，不要相信爱情，爱是瞬间的美，情是永恒的痛，灿若烟花，稍纵即逝，那一刻，我知道，我错了。";
+            var y = document.getElementsByTagName("img")[0];
+            y.src = "IMG_20230814_194008.jpg";
+        }
+        function change4() {
+            var x = document.getElementsByTagName("p")[0];
+            x.innerHTML = "至今，我们都无法真正分辨出，落花与流水，到底是谁有情，谁无意。又或许并无情意之说，\
+            不过是红尘中的一场偶遇，一旦分别，两无痕迹。";
+            var y = document.getElementsByTagName("img")[0];
+            y.src = "IMG_20230814_185620.jpg";
+        }
+    </script>
+</body>
+
+</html
